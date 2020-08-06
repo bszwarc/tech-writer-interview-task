@@ -1,35 +1,37 @@
 ## Overview
 
-This task is used during interviews with technical writers. Its purpose is to give the candidates a challenge to try out GitHub on their own. The expectation is that the candidates read and understand basic glossary arround Git. We wish that the candidates not only complete the task, but also face the technology they will use as technical writers.
+The purpose of this task is to give you a glimpse of what technical writers in Kyma do and what tools they use. You get a chance to play with the software you are going to write about and learn more about the underlying technology.
 
 ## Task
 
-
 ### Step 1
 
-Please **fork** this repository and create a new file in the `tasks` folder. The new file should be named after your GitHub user name. The file extension should be `md` (abcxyz.md) so GitHub knows it includes Markdown syntax which has to be parsed into HTML.
+Fork this repository and create a new file in the `tasks` folder. Name the file after your GitHub user name. The file must have a  `.md` extension. For example, `jacktorrance.md`.
+Write all of the required content in [Markdown](https://www.markdowntutorial.com/) and save it in the file you created.
 
-### Step 2
+## Step 2
 
-Provide content in this file. It should contain the following sections:
+Access the Kyma cluster prepared for the recruitment process. Use the provided credentials.
 
-* Explanation of what you think GitHub is, using your own words
-* Sample documentation
+>**NOTE:** The password and email are encoded with base64. Decode the credentials before use.
 
-### Step 3
+## Step 3
 
-Create a **pull request** back to this repository so we can see what you did, and can perform the review of the task.
+Explore the Kyma cluster. Create a ClusterRoleBinding and bind the **recruitment** group to the **edit** role. Create a step-by-step instruction for users that want to achieve this exact goal. Introduce the instruction with an `H2` heading.
 
-## Hints
+When writing the instructions, follow the [Kyma guidelines for creating content](https://github.com/kyma-project/community/tree/master/guidelines/content-guidelines), the [Microsoft Manual of Style](https://docs.microsoft.com/en-us/style-guide/welcome/), and reference the writing style seen on [kyma-project.io](https://kyma-project.io/docs/) to create a piece that could become a part of product documentation.
 
-### Glossary 
+>**TIP:** Use the **Preview changes** option in the GitHub UI or an external Markdown editor, such as [jbt.github.io](https://jbt.github.io/markdown-editor/) to check if your Markdown displays correctly.
 
-We know that GitHub's glossary is a high entry threshold. You can refer to [this](https://github.com/Writers-Instagram/GitHub-for-technical-writers-WORKSHOP#glossary) glossary or just use google and/or GitHub docs.
+## Step 4
 
-### Content
+Kyma and [Kubernetes](https://kubernetes.io/) rely heavily on Namespaces. Conduct research and create a short definition of what a Namespace is. In your definition include an example that illustrates how users can use Namespaces in their implementations. Introduce the definition with an `H2` heading.
 
-We strongly encourage you to use [Markdown](https://www.markdowntutorial.com/) that you can mix with HTML, if you really need. This is our standard syntax for writing content.
+## Step 5
+
+Create a pull request to this repository.
+
 
 ## Expected outcome
 
-The expected outcome is a [pull request](../../pulls) with the file and its content, as described above.
+The expected outcome is a [pull request](https://github.com/Writers-Instagram/tech-writer-interview-task/pulls) with a single file that contains all of the required content.
